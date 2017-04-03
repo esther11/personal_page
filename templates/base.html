@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{{ title }} - Xianyue Li Personal Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="static/bootstrap3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="static/style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<div class="col-xs-12 col-md-1">
+					<img id="portrait" 
+							{% if name == "index" %}
+								src="/static/img/portrait1.jpg"
+							{% elif name == "resume"%}
+								src="/static/img/portrait2.jpg"
+							{% elif name == "skills"%}
+								src="/static/img/portrait3.jpg"
+							{% elif name == "doodles"%}
+								src="/static/img/portrait4.jpg"
+							{% endif %}>
+				</div>
+
+				<div class="col-xs-12 col-md-4">
+					<h1>Xianyue (Esther) Li</h1>
+				</div>
+
+				<div class="col-xs-12 col-md-7">
+					<nav>
+						<a href="/"
+							{% if name == "index" %}
+								class = "current"
+							{% endif %}>
+						   	<span class="glyphicon glyphicon-home"></span> HOME
+						</a>
+						<a href="resume.html"
+							{% if name == "resume" %}
+								class = "current"
+							{% endif %}>
+						   	<span class="glyphicon glyphicon-user"></span> RESUME
+						</a>
+						<a href="skills.html"
+							{% if name == "skills" %}
+								class = "current"
+							{% endif %}>
+						   	<span class="glyphicon glyphicon-check"></span> SKILLS
+						</a>
+						<a href="doodles.html"
+							{% if name == "doodles" %}
+								class = "current"
+							{% endif %}>
+						   	<span class="glyphicon glyphicon-pencil"></span> DOODLES
+						</a>
+					</nav>
+				</div>
+
+			</div>	
+		</header>
+
+
+{% block content %}
+
+<h1>You shouldn't see this!</h1>
+
+{% endblock %}
+
+
+
+		<footer>
+			<div class="container">
+				<div class="col-xs-6 col-sm-3 col-md-4">
+					<address>
+						Location:<br/>
+						1780 Broadway Street<br/>
+						Ann Arbor, MI 48105
+					</address>
+				</div>
+
+				<div class="col-xs-6 col-sm-3 col-md-4">
+					<p id="contact">
+						Contact:<br/>
+						xianyuel@umich.edu<br/>
+						(+1) 734-548-7290
+					</p>	
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<nav>
+						<a href="https://www.facebook.com/xianyue.li.75">
+							<img src="/static/img/Facebook.png">
+						</a>
+						<a href="https://www.instagram.com/xianyuel/">
+							<img src="/static/img/Instagram.png">
+						</a>
+						<a href="https://www.linkedin.com/in/xianyue-li-bb7410104">
+							<img src="/static/img/LinkedIn.png">
+						</a>
+						<a href="https://github.com/esther11">
+							<img src="/static/img/Github.png">
+						</a>	
+					</nav>
+				</div>
+
+			</div>
+			<p id="copyright">&copy; 2016 Xianyue Li</p>
+		</footer>
+
+	</body>
+</html>

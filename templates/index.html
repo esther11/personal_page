@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+		
+{% block content %}
+		<section class="sec-background-img">
+			<div class="container">
+				<div class="col-sm-12 col-md-4">
+					<h2 class="white">Striving for Eudaimonia</h2>
+					<p class="white" id="intro">
+						Eudaimonia, the Greek word εὐδαιμονία, is commonly translated as "welfare". To quote Brian Christian's <span style="font-style: italic;">The Most Human Human</span>, Eudaimonia "means something along the lines of 'well-being of spirit'" - "flourishing", a subjective life experience.<br/><br/>
+						"Critical to eudaimonia is Arete ἀρετή - 'arete' - translated as 'fulfillment of purpose'... Flowers are meant to bloom; knives are meant to cut; what are we meant to do?"<br/><br/>
+						Having witnessed and heard of abundant stories, what is important is living one's own. Here's my story, with much to cherish and little to complain about on my way to figuring out who I want to be, where is the boundary of my capacity, and what I am meant to do.
+
+					</p>
+				</div>
+
+				<div class="col-sm-12 col-md-8" class="gallery">
+					<script type="text/javascript">
+						function upDate(previewPic){
+							document.getElementById('preview-img').src = previewPic.src;
+							document.getElementById('preview-text').innerHTML = previewPic.alt;
+						}
+					</script>
+					
+					<div class="preview" align="center">
+						<img id="preview-img" src="static/img/gallary/mahjong.jpg" alt="3-year-old me messing with mahjong" align="center"/>
+						<p id="preview-text" class="white">3-year-old me messing with mahjong</p>
+					</div>
+
+					<div class="thumbnails" align="center">
+						<img onmouseover="upDate(this)" src="static/img/gallary/mahjong.jpg" alt="3-year-old me messing with mahjong"/>
+						<img onmouseover="upDate(this)" src="static/img/gallary/young.jpg" alt="5-year-old me dreaming of becoming a pilot"/>
+						<img onmouseover="upDate(this)" src="static/img/gallary/cousins.jpg" alt="childhood with my cousins"/>
+						<img onmouseover="upDate(this)" src="static/img/gallary/high_school.jpg" alt="with high school friends @ Harbin, China"/>
+						<img onmouseover="upDate(this)" src="static/img/gallary/college.jpg" alt="with college friends @ Sangke Prairie, China"/>
+						<img onmouseover="upDate(this)" src="static/img/gallary/roommates.jpg" alt="with college roommates @ Wuhan, China"/>
+						<img onmouseover="upDate(this)" src="static/img/gallary/BFF.jpg" alt="with BFF @ Singapore"/>
+						<img onmouseover="upDate(this)" src="static/img/gallary/graduate.jpg" alt="college graduation @ Huazhong University of Science and Technology"/>
+					</div>
+				</div>
+			</div>
+			
+			
+		</section>
+
+		<section class="sec-white">
+			<div class="container">
+				<div class="col-md-12">
+					<h2>See Fast Facts About Me</h2>
+				</div>
+				
+			</div>
+			
+			<div id="facts" class="container">
+				<div class="col-xs-6 col-sm-4 col-md-2">
+					<img src="static/img/facts/cruise.jpg" alt="Oasis of the Seas">
+					<p>Oasis of the Seas, the world's 2nd largest cruise ship, sailing on Western and Eastern Caribbean, is in my dream list since the day it was built.</p>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-2">
+					<img src="static/img/facts/elon.jpg" alt="Elon Musk">
+					<p>Fan of technology. One of the person I admire most is Elon Musk, the man who has the dream of colonizing Mars and plans in hand to achieve that!</p>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-2">
+					<img src="static/img/facts/game.jpg" alt="Dragon Age 3: Inquisition">
+					<p>Loooooove RPG games. STRONGLY RECOMMAND: Dragon Age 3: Inquisition. (Personally, I think it beats The Elder Scrolls V!)</p>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-2">
+					<img src="static/img/facts/dog.jpg" alt="Old English Sheepdog">
+					<p>I'm a cat person but love dogs, especially Old English Sheepdogs and Schnauzers. Isn't it cute that you can barely see their eyes?</p>
+				</div>	
+				<div class="col-xs-6 col-sm-4 col-md-2">
+					<img src="static/img/facts/procrastinator.jpg" alt="procrastinator cartoon">
+					<p>Seriously, I put the "pro" in "procrastinator". Maybe panic is my motivation for everything.</p>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-2">
+					<img src="static/img/facts/auburn.jpg" alt="auburn hair">
+					<p>I'm a 100% Chinese, but somehow has auburn hair. It's not dyed, genetic mutation perhaps?</p>
+				</div>
+			</div>
+		</section>
+{% endblock %}

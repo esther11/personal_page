@@ -1,0 +1,200 @@
+/*-------------------------------general-------------------------------*/
+
+body{
+	background-color: #E2E2E2;
+	margin: 0px;
+}
+
+/*-------------------------------header---------------------------------*/
+header{
+	padding: 2% 0;
+}
+#portrait {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+h1{
+	margin: 5px 0;
+	text-align: center;
+	font: 16pt Verdana, Arial;
+	}
+
+header nav a{
+	display: block;
+	color: #000000;
+	font: 12pt Verdana, Arial;
+	text-decoration: none;
+	text-align: center;
+	margin: 5px 0;
+	padding: 5px 0;
+	}
+
+.current{
+	color: #FFFFFF !important;
+	border-radius: 10%;
+	background-color: #000033;
+	text-decoration: none;
+	margin: 5px 5px;
+	padding: 5px 5px;
+}
+
+/*-----------------------------section-----------------------------------*/
+.sec-background-img{
+	background-image: url('sec_bg.jpg');
+	background-size: 100%;
+	padding: 1%;
+}
+.sec-white{
+	background-color: #FFFFFF;
+	padding: 1%;
+}
+h2{
+	font: 18pt Verdana, Arial;
+	padding: 0 0 2% 0;
+}
+#intro{
+	margin-top: 40px;
+	text-align: justify;
+}
+.white{
+	color: #FFFFFF;
+}
+
+.thumbnails img {
+	width: 11%;
+	height: 11%;
+	border: 1px solid #000000;
+	margin-bottom: 30px;
+}
+
+#preview-img{
+	margin: 20px auto;
+	border: 5px solid #000000;
+	width: 95%;
+	height: 95%;
+}
+
+
+#facts img{
+	width: 100%;
+	height: 100%;
+	border: 3px solid #E2E2E2;
+	margin: 0 auto;
+	padding: 0.5%;
+}
+#facts p{
+	padding: 5px;
+	margin: 10px auto 20px auto;
+}
+
+#doodles img{
+	width: 100%;
+	height: 100%;
+	border: 3px solid #E2E2E2;
+	margin: 0 auto;
+	padding: 0.5%;
+}
+#two_year_old{
+	width: 100%;
+	height:100%;
+	margin: 30px auto;
+}
+#heesch{
+	width: 100%;
+	height: 100%;
+	margin: 30px auto;
+}
+.p-center{
+	text-align: center;
+	margin: 0 auto;
+}
+
+ol li{
+	list-style-type: disc;
+}
+summary{
+	font-weight: bold;
+	line-height: 18px;
+	margin: 5px 0;
+}
+progress{
+	margin-left: 2px;
+}
+
+/*--------------------------------footer--------------------------------*/
+footer{
+	padding: 20px 0;
+	
+}
+
+address{
+	text-align: center;
+}
+
+#contact{
+	text-align: center;
+}
+
+footer nav{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+footer nav img{
+	width: 50px;
+	height: 50px;
+}
+
+#copyright{
+	text-align: center;
+	font-size: 10px;
+	margin-top: 5px;
+}
+
+
+/*-----------------------------media query-------------------------*/
+@media screen and (min-width: 768px){
+	header nav{
+		margin-top: 10px;
+		text-align: center;
+	}
+	header nav a{
+		display: inline;
+		padding: 3px 10px;
+		margin: 0 5px;
+	}
+	footer nav{
+		float: right;
+		text-align: right;
+	}
+	address{
+		text-align: center;
+	}
+	#contact{
+		text-align: center;
+		position: relative;
+		left: 50%;
+	}
+}
+
+@media screen and (min-width: 992px){
+	h1{
+		margin: 50px 0 0 10px;
+		text-align: left;
+	}
+	header nav{
+		margin-top: 52px;
+		text-align: right;
+	}
+	address{
+		text-align: left;
+	}
+	#contact{
+		text-align: left;
+		position: relative;
+		left: 32%;
+	}
+}
